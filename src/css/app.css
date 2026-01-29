@@ -1,1 +1,274 @@
-/* app global css */
+@font-face {
+    font-family: 'C64';
+    src: local('Courier New'), local('Consolas'), local('monospace');
+}
+
+html, body {
+    background-color: #000;
+    color: #33ff33;
+    font-family: 'C64', monospace;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.97;
+    }
+
+    5% {
+        opacity: 0.95;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    15% {
+        opacity: 0.95;
+    }
+
+    20% {
+        opacity: 0.98;
+    }
+
+    25% {
+        opacity: 0.95;
+    }
+
+    30% {
+        opacity: 0.9;
+    }
+
+    35% {
+        opacity: 0.95;
+    }
+
+    40% {
+        opacity: 0.98;
+    }
+
+    45% {
+        opacity: 0.95;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    55% {
+        opacity: 0.95;
+    }
+
+    60% {
+        opacity: 0.98;
+    }
+
+    65% {
+        opacity: 0.95;
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    75% {
+        opacity: 0.95;
+    }
+
+    80% {
+        opacity: 0.98;
+    }
+
+    85% {
+        opacity: 0.95;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    95% {
+        opacity: 0.95;
+    }
+
+    100% {
+        opacity: 0.98;
+    }
+}
+
+.terminal-container {
+    /* animation: flicker .1s infinite; */
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 5px solid #33ff33;
+    background-color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px #33ff33;
+    position: relative;
+    overflow: hidden;
+}
+
+.terminal-header {
+    text-align: center;
+    border-bottom: 2px double #33ff33;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.terminal-section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    background-color: #33ff33;
+    color: #000;
+    display: inline-block;
+    padding: 2px 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.experience-item {
+    margin-bottom: 15px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #aaffaa;
+}
+
+.item-title {
+    color: #ffffff;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    border: 1px solid #33ff33;
+    padding: 1px 5px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+}
+
+@keyframes scan {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 100%;
+    }
+}
+
+.scanline {
+    /* width: 100%;
+    height: 100px;
+    z-index: 100;
+    background: linear-gradient(to bottom, transparent, rgba(51, 255, 51, 0.05), transparent);
+    position: fixed;
+    pointer-events: none;
+    animation: scan 4s linear infinite; */
+}
+
+.terminal-glow {
+    text-shadow: 0 0 5px #33ff33;
+}
+
+.text-white {
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+.text-cyanTerminal {
+    color: #aaffee;
+    text-shadow: 0 0 5px #aaffee;
+}
+
+.text-yellow {
+    color: #eeee77;
+    text-shadow: 0 0 5px #eeee77;
+}
+
+.text-green {
+    color: #33ff33;
+    text-shadow: 0 0 5px #33ff33;
+}
+
+.font-lg {
+    font-size: 1.5em;
+}
+
+.font-xl {
+    font-size: 2em;
+}
+
+.font-sm {
+    font-size: 0.8em;
+}
+
+a {
+    color: #33ff33;
+    text-decoration: none;
+    border-bottom: 1px dashed #33ff33;
+}
+
+    a:hover {
+        background-color: #33ff33;
+        color: #000;
+    }
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: "> ";
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.blazor-error-boundary::after {
+    content: "An error has occurred."
+}
+
+.darker-border-checkbox.form-check-input {
+    border-color: #929292;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+    color: var(--bs-secondary-color);
+    text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+    text-align: start;
+}
